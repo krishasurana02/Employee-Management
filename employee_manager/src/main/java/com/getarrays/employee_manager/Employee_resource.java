@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/employee")
 public class Employee_resource {
@@ -41,7 +42,7 @@ public class Employee_resource {
         return new ResponseEntity<>(updateemployee, HttpStatus.OK);
     }
 
-    @PutMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> deleteEmployee(@PathVariable("id") Long id){
         employee_service.deleteEmployee(id);
         return new ResponseEntity<>( HttpStatus.OK);

@@ -1,0 +1,41 @@
+.main-page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card {
+    border: none;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    margin-bottom: 30px;
+}
+
+.empolyee-card{
+background-color: white;
+margin: 2em;
+padding-bottom: 1em;
+}
+
+.w-60 {
+    width: 60px;
+}
+
+a{
+    color: #707070;
+}
+
+h4, h5 {
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    background-color: rgba(	0,0,0, 0.7);
+    font-size: 14px;
+    font-weight: 200;
+}
